@@ -47,5 +47,9 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+    <string>The app uses the microphone to allow you to use your voice to respond to notifications and prompts without having to touch the screen.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>The app uses speech recognition to listen for and understand your voice responses to notifications and prompts.</string>
 </dict>
 </plist>

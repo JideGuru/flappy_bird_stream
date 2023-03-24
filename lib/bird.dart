@@ -41,7 +41,13 @@ class Bird extends SpriteComponent with HasGameRef<FlappyBirdGame>, CollisionCal
     gameOver();
   }
 
+  reset() {
+    position = Vector2(50, gameRef.size.y / 2 - size.y / 2);
+  }
+
   gameOver() {
+    // gameRef.stopListening();
+    gameRef.overlays.add('gameOver');
     gameRef.pauseEngine();
   }
 }
